@@ -9,7 +9,7 @@ public class DriverFactory {
     public static WebDriver open(String type) {
         if (type.equals("chrome")) {
 
-            String driverPath = ".\\src\\test\\resources\\chromedriver_new.exe";
+            String driverPath = "src/test/resources/chromedriver";
 
             // define driver
             System.setProperty("webdriver.chrome.driver", driverPath);
