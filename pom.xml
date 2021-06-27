@@ -301,6 +301,11 @@
     <finalName>applicationPetstore</finalName>
     <plugins>
       <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.9.0.2155</version>
+      </plugin>
+      <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <version>${version.maven.war.plugin}</version>
         <configuration>
@@ -433,7 +438,7 @@
       <dependency>
         <groupId>org.primefaces.extensions</groupId>
         <artifactId>all-themes</artifactId>
-        <version>1.0.8</version>
+        <version>1.0.10</version>
       </dependency>
     </dependencies>
   </profile>
@@ -445,6 +450,11 @@
         <url>http://repository.primefaces.org</url>
         <layout>default</layout>
       </repository>
+        <repository>
+          <id>central-repo</id>
+          <name>Central Repository</name>
+          <url>http://repo1.maven.org/maven2</url>
+        </repository>
     </repositories>
 
 
